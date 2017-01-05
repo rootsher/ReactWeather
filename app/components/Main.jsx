@@ -13,14 +13,12 @@ var Nav = require('Nav');
   }
 });*/
 
-var Main = (props) => {
-	return (
-		<div>
-			<Nav/>
-			<h2>Main Component</h2>
-			{props.children}
-		</div>
-	)
-}
+var Main = ({ children }) => (
+	<div>
+		<Nav />
+		<h2>Main Component</h2>
+		{children}
+	</div>
+);
 
 module.exports = Main;
